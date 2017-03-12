@@ -1,27 +1,15 @@
+/**************************************************/
+/* Variables */
+/**************************************************/
+/**************************************************/
+/* */
+/**************************************************/
 body {
   color: #858585;
   font: 300 14px/14px "Ruda", Helvetica, Arial, sans-serif;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   background-color: #eee;
-}
-a {
-  color: #2ad2b0;
-  text-decoration: none;
-}
-a:hover {
-  color: #2ad2b0;
-}
-.btn,
-a,
-.btn:hover,
-a:hover {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  outline: none !important;
 }
 /**************************************************/
 /* Headings */
@@ -80,6 +68,9 @@ p {
   line-height: 26px;
   margin-bottom: 26px;
 }
+/**************************************************/
+/* Container */
+/**************************************************/
 .container {
   width: 100%;
   max-width: 1300px;
@@ -92,8 +83,26 @@ p {
   padding: 5px 30% 5px 30%;
 }
 /**************************************************/
-/* Buttons */
+/* Links and Buttons */
 /**************************************************/
+a {
+  color: #2ad2b0;
+  text-decoration: none;
+}
+a:hover {
+  color: #2ad2b0;
+}
+.btn,
+a,
+.btn:hover,
+a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none !important;
+}
 .btn {
   border: none;
   border-radius: 0;
@@ -515,7 +524,7 @@ p {
 }
 .footer a {
   color: #2ad2b0;
-  margin: 0 16px;
+  margin: 0 10px;
 }
 .footer hr {
   width: 100px;
@@ -537,6 +546,9 @@ p {
   -moz-border-radius: 50%;
   border-radius: 50%;
   font-size: 23px;
+}
+.socialnav ul {
+  padding: 0px;
 }
 .socialnav li {
   display: inline-block;
@@ -630,11 +642,18 @@ p {
   body {
     font: 300 12px/12px "Ruda", Helvetica, Arial, sans-serif;
   }
+  .banner {
+    min-height: 400px;
+  }
   h1.title {
     font-size: 22px;
   }
   h1.sub-title {
     font-size: 22px;
+  }
+  p {
+    line-height: 16px;
+    font-size: 14px;
   }
   .navbar-nav > li > a {
     line-height: 16px;
