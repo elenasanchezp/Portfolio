@@ -31,6 +31,8 @@
 		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/percentage_circle.css">
+		
 	</head>
 
 	<body id="home">
@@ -191,49 +193,37 @@
 					
 						<div class="container">  
 
-							<div class="col">
-								<div class="spacer"></div>
-								<div class="circle cicle_html">
-									<div class="wrapcontent">
-										<h1><a href="#">HTML</a></h1>
-									</div>
+							<div ng-app="percentageApp" ng-controller="percentageController" >						
+  							
+								<div class="col">
+									<skills-chart skill="css" value="40" text=".css{}"></skills-chart>
 								</div>
-							</div>
 
-							<div class="col">
-								<div class="spacer"></div>
-								<div class="circle cicle_css">
-									<div class="wrapcontent">
-										<h1><a href="#">.css{}</a></h1>
-									</div>
+								<div class="col">
+									<skills-chart skill="jquery" value="45" text="jquery();"></skills-chart>
 								</div>
-							</div>
 
-							<div class="col">
-								<div class="spacer"></div>
-								<div class="circle cicle_jquery">
-									<div class="wrapcontent">
-										<h1><a href="#">jquery();</a></h1>
-									</div>
+								<div class="col">
+									<skills-chart skill="html" value="60" text="HTML"></skills-chart>
 								</div>
-							</div>
 
-							<div class="col">
-								<div class="spacer"></div>
-								<div class="circle cicle_c">
-									<div class="wrapcontent">
-										<h1><a href="#">C#(){}</a></h1>
-									</div>
+								<div class="col">
+									<skills-chart skill="c" value="65" text="C#(){}"></skills-chart>
 								</div>
-							</div>
 
-							<div class="col">
-								<div class="spacer"></div>
-								<div class="circle cicle_sql">
-									<div class="wrapcontent">
-										<h1><a href="#">SQL</a></h1>
-									</div>
+								<div class="col">
+									<skills-chart skill="sql" value="70" text="SQL"></skills-chart>
 								</div>
+								<!--
+								<div class="col">
+									<div class="spacer"></div>
+									<div class="circle cicle_sql">
+										<div class="wrapcontent">
+											<h1><a href="#">SQL</a></h1>
+										</div>
+									</div>
+								</div> 
+								-->
 							</div>
 						</div>
 					
@@ -361,6 +351,8 @@
 		<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
 		<script src="assets/js/mobile/touchSwipe.min.js"></script>
 		<script src="assets/js/script.js"></script>
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script src="assets/js/angular/app.js"></script>
+
 	</body>
 </html>
