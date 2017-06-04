@@ -6,8 +6,10 @@
 @color-gray: #666;
 @primary-color: #2897B7;
 @second-color: #5c9a7b;
-@about-color-background: #1abc9c;
-@skills-color-background: #eeeeee; 
+@about-color-background: #5D7FA2;
+@projects-color-background: #fff; 
+@skills-color-background:  #eeeeee;
+@contact-color-background: #1abc9c;  
 
 @link-color: #2ad2b0;
 
@@ -92,6 +94,11 @@ p {
 .wrapper {
     background-color: @color-white;
 }
+
+.navbar-wrapper{
+    overflow: hidden;
+}
+
 .spacer {
     padding: 5px 30% 5px 30%;
 }
@@ -100,10 +107,11 @@ p {
 /**************************************************/
 a {
     color: @link-color;
-    text-decoration: none;
+    text-decoration: underline;
 }
 a:hover {
     color: @link-color;
+    font-weight: bold; 
 }
 .btn,
 a,
@@ -152,9 +160,10 @@ a:hover {
     height: 60px;
     padding: 16px;
     font-weight: 700;
+    text-decoration: none; 
 }
 .navbar-brand .navbar-brand-name {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 32px;
 }
 .navbar-brand .navbar-brand-role {
@@ -164,6 +173,7 @@ a:hover {
 .navbar-default .navbar-nav>li>a {
     color: @color-black !important;
     font-weight: 700;
+    text-decoration: none;
 }
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus {
@@ -246,7 +256,7 @@ a:hover {
     background: url(../img/banner_laptop-glasses-coffe.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center right; 
     min-height: 600px; 
 }
 .overlay {
@@ -318,9 +328,9 @@ a:hover {
     //min-height: 93px;
 }
 .about-end-background {
-    background: url(../img/about-end-b.jpg) no-repeat;
-    background-size: cover;
-    min-height: 93px;
+    //background: url(../img/about-end-b.jpg) no-repeat;
+    //background-size: cover;
+    //min-height: 93px;
 }
 .about {
     background: @about-color-background no-repeat;
@@ -335,20 +345,96 @@ a:hover {
     vertical-align: baseline;
     text-align: center;
     padding-top: 60px;
-
-    h1,  
-    h2, 
-    h3,
-    h4, 
-    p{
-        color: white !important;
+        
+    .title h1,  
+    .title h2, 
+    .title h3,
+    .title h4, 
+    .content p{
+        color: @color-white;
     }
 
-    a {
-        color: white !important;
+    .content a {
+        color: @color-white;
         text-decoration: underline;
+
+        &hover {
+            color: #1abc9c;
+        }
     } 
+
 }
+
+/**************************************************/
+/* Projects */
+/**************************************************/
+.projects {
+    background: @projects-color-background no-repeat;
+    background-size: cover;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    vertical-align: baseline;
+    text-align: center;
+    padding-top: 60px;
+
+     hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 4px solid #ddd;
+    }
+}
+
+.container {
+  width:98%;
+  height: 100%;
+  margin: 0 auto;
+  display: block; 
+
+  .project-description{
+    .img-responsive{
+        padding: 0 20%;
+    }
+  } 
+}
+
+/**************************************************/
+/* Single Project */
+/**************************************************/
+.project {
+    background: @projects-color-background no-repeat;
+    background-size: cover;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    vertical-align: baseline;
+    text-align: center;
+    padding-top: 120px;
+
+     hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 4px solid #ddd;
+    }
+}
+
+.container {
+  width:98%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;  
+}
+
 
 /**************************************************/
 /* Skills */
@@ -387,11 +473,11 @@ a:hover {
 .col {
    display: inline-block;
    position: relative;
-   width: 15%;
-   margin: 4% 0 5% 3%;
-   padding:0;
+   margin: 5px 0 5px 5px;
+   padding: 0;
    background-color: transparent;
-    border-top: none;
+   border-top: none;
+
   .spacer {
     position: relative;
     padding-top: 100%;
@@ -526,8 +612,14 @@ a:hover {
 /**************************************************/
 /* Contact */
 /**************************************************/
+.contact-start-background {
+    background: url(../img/contact-start-b.jpg) no-repeat;
+    background-size: cover;
+    min-height: 93px;
+}
+
 .contact {
-    background: @color-white;
+    background: @contact-color-background;
     background-size: cover;
     border: 0;
     font-family: inherit;
@@ -539,6 +631,16 @@ a:hover {
     vertical-align: baseline;
     text-align: center;
     padding-top: 60px;
+}
+
+.contact{
+    .title h2, 
+    .title h4,
+    .content p, 
+    .content a, 
+    .content span{
+        color: @color-white; 
+    }
 }
 
 .email-lnk {
@@ -575,9 +677,9 @@ a:hover {
     display: inline-block;
     width: 50px;
     height: 50px;
-    line-height: 50px;
+    line-height: 55px;
     background: #aaa;
-    color: white;
+    color: @color-white;
     text-align: center;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -614,6 +716,7 @@ a:hover {
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
+    text-align: center;
 }
 .backToTop:hover {
    background-color: @link-color;
@@ -664,11 +767,12 @@ a:hover {
     .btn {
         padding: 8px 32px;
     }
+
     .socialnav .socialnavitem {
         width: 40px;
         height: 40px;
-        line-height: 40px;
-        font-size: 18px;
+        line-height: 44px;
+        font-size: 22px;
     }
 
     .circle {
@@ -694,9 +798,14 @@ a:hover {
     }
 
     p {
-        line-height: 16px;
-        font-size: 14px;
+        line-height: 24px;
+        font-size: 16px;
     }
+
+    .content{
+        margin: 30px 20px;
+    }
+
     .navbar-nav > li > a {
         line-height: 16px;
     }
@@ -720,10 +829,15 @@ a:hover {
     .navbar-default .navbar-toggle .icon-bar {
         background-color: #fff;
     }
-    .col{
-        width: 25%;
-    }
 
+    .container {
+        .project-description{
+            .img-responsive{
+                padding: 0;
+            }
+        } 
+    }
+    
     .circle {
       h1 {
         font-size: 12px;
@@ -737,10 +851,6 @@ a:hover {
     }
     h1.sub-title {
         font-size: 18px;
-    }
-
-    .col{
-        width: 25%;
     }
 
     .circle {
