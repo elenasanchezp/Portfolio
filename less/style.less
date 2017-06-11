@@ -4,12 +4,14 @@
 @color-white: #fff;
 @color-black: #222;
 @color-gray: #666;
+@color-red: #f34c4c;
+
 @primary-color: #2897B7;
 @second-color: #5c9a7b;
-@about-color-background: #5D7FA2;
+@about-color-background: #1abc9c;
 @projects-color-background: #fff; 
 @skills-color-background:  #eeeeee;
-@contact-color-background: #1abc9c;  
+@contact-color-background: #5D7FA2 ;  
 
 @link-color: #2ad2b0;
 
@@ -635,7 +637,12 @@ a:hover {
 
 .contact{
     .title h2, 
-    .title h4,
+    .title h4{
+        color: @color-white; 
+    }
+}
+
+.contact{
     .content p, 
     .content a, 
     .content span{
@@ -672,7 +679,9 @@ a:hover {
     font-size: 21px;
     margin-right: 16px;
 }
-
+.footer-heart{
+    color: @color-red; 
+}
 .socialnav .socialnavitem {
     display: inline-block;
     width: 50px;
