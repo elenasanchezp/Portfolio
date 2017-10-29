@@ -1,0 +1,80 @@
+//==========================================================================
+//   HEADING
+//==========================================================================
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin: 0;
+        line-height: 16px;
+    }
+
+    h1 {
+        font: 700 48px "Ruda", Helvetica, Arial ,sans-serif;
+        padding-top: 5px;
+        padding-bottom: 0;
+        text-transform: initial;
+        color: @color-white;
+    }
+
+    h1.title {
+        font-family: "Ruda", Helvetica, Arial ,sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        padding-top: 0;
+        padding-bottom: 5px;
+        text-transform: initial;
+        color: @color-white;
+
+        .responsive(@screen-sm, {
+            font-size: 22px;
+        });
+
+        .responsive(@screen-md, {
+            font-size: 30px; 
+        });
+    }
+
+    h1.sub-title {
+        font-family: "Ruda", Helvetica, Arial ,sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        padding-top: 0;
+        padding-bottom: 5px;
+        text-transform: initial;
+        color: @color-white;
+
+        .responsive(@screen-sm, {
+            font-size: 22px;
+        });
+
+        .responsive(@screen-md, {
+            font-size: 30px; 
+        });
+    }
+
+    h2 {
+        font: 500 36px "Ruda", Helvetica, Arial ,sans-serif;
+        margin-top: 15px; 
+        text-transform: uppercase;
+        letter-spacing: .125em;
+        margin-bottom: 5px;
+        color: @primary-color;
+    }
+
+    h3 {
+        font: 400 22px "Ruda", Helvetica, Arial ,sans-serif;
+        margin-bottom: 5px;
+        color: @primary-color;
+    } 
+
+    h4 {
+        font: 300 18px "Ruda", Helvetica, Arial ,sans-serif;
+        margin-bottom: 5px;
+        color: @primary-color;
+    }
+
+    h5 { 
+        color: @color-white;
+    }

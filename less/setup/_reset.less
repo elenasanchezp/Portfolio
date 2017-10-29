@@ -1,0 +1,29 @@
+//==========================================================================
+//   RESET
+//==========================================================================
+
+    body {
+        font-family: "Ruda", Helvetica, Arial ,sans-serif;
+        font-size: 12px;
+        line-height: 15px;   
+        font-weight: 300;
+        color: #858585;
+        background-color: @color-white;
+        -webkit-font-smoothing: antialiased;
+        background-color: #eee;
+           
+        .responsive(@screen-sm, {
+            font-size: 13px;
+        });
+
+        .responsive(@screen-md, {
+            font-size: 14px;
+        });
+        
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 26px;
+    }
