@@ -31,16 +31,16 @@
 		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" href="assets/css/percentage_circle.css">
-		
+		<link rel="stylesheet" href="assets/css/percentage_circle.css">		
+		<link rel="stylesheet" href="https://unpkg.com/slick-carousel@1.7.1/slick/slick.css">
+		<link rel="stylesheet" href="https://unpkg.com/slick-carousel@1.7.1/slick/slick-theme.css">
 	</head>
 
 	<body id="home">
 
-		<!-- Header: Start -->
+		<!-- Nav: Starts -->
 		<div class="navbar-wrapper">
 			<div class="navbar navbar-default navbar-fixed-top" id="top-nav">
-			  <div class="container">
 				<div class="navbar-header">
 				 
 				  <!-- Logo: Start -->
@@ -71,62 +71,59 @@
 						</ul>
 					</div>
 				<!-- Nav: End -->
-
-			  </div>
 			</div>
 		</div>
+		<!-- Nav: Ends -->
 
-		<!-- Header: Start -->
-		<div class="container">
+		<!-- Content: Starts -->
+		<div>
 			<div class="wrapper"> 
 
+				<!-- Banner: Starts -->
 				<div class="banner">
-
 					<div class="overlay">
-							<h1 class="title text-left">Elena Sanchez</h1>
-							<h1 class="sub-title text-left">Full-stack developer</h1>
-							<h5 class="sub-title text-left">Nottingham, United Kingdom</h2>
-							<strong><a href="#about">Find out more <i class="fa fa-arrow-circle-right"></i></a></strong>
+						<h1 class="title text-left">Elena Sanchez</h1>
+						<h1 class="sub-title text-left">Full-stack developer</h1>
+						<h5 class="sub-title text-left">Nottingham, United Kingdom</h5>
+						<strong>
+							<a href="#about">Find out more <i class="fa fa-arrow-circle-right"></i></a>
+						</strong>
 					</div>
-
 				</div>
+				<!-- Banner: Ends-->
 
-				<!-- about -->
+				<!-- About: Starts -->
 				<div class="about-start-background"></div>
-				<div id="about"  class="about text-center">
-				  <div class="row">
-					  <div class="col-sm-12 wowload">
-						<div class="title">
-							<h2><span class="glyphicon glyphicon-user"></span> About</h2>
-							<h4>[buy-me]</h4>
-						</div>								
-							
-						<div class="spacer">
-							<hr>
-						</div>
+				<div id="about" class="about text-center">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12 wowload">
+								<div class="title">
+									<h2><span class="glyphicon glyphicon-user"></span> About</h2>
+								</div>								
+									
+								<div class="spacer">
+									<hr>
+								</div>
 
-						<div class="content">
-
-							<p class="text-left">A proficient C# Developer with more than 4 years’ experience developing enterprise level Web based and Windows based applications using Microsoft .NET Technologies. I have experience on databases, agile methodologies, collaboration software. Involved in unit test cases and regression testing.</p>
-
-							<p class="text-left">For more content focussed sites I have experience in Concrete5, Expression Engine, Magento Ecommerce and Wordpress. With experience in front-end (HTML5, CSS3, jQuery and AngularJS) to quickly and efficiently build a project from the beginning until deploying to life.</p>
-
-							<p class="text-left">I am a proactive person with a flair for adopting emerging trends and addressing industry requirements to achieve objectives. I am an effective team member with proven abilities to be a part of the team during the project phase. I can provide good skills, responsibilities, maturity, good teamwork and desires to face new challenges. I have always liked creating websites, I am passionate about programming, last technology and agile coding, and programming standards and I have a wide range of skills necessary to fit the description of a Full Stack Developer. </p>
-
-							<p class="text-left">You can view my full resume on <a href="https://uk.linkedin.com/in/elena-sánchez-5572a726" target="_blank">Linkedin</a>.</p>
-						</div>
-
-					  </div>
-				  </div>  
+								<div class="content">
+									<p class="text-left">A proficient C# Developer with more than 4 years’ experience developing enterprise level Web based and Windows based applications using Microsoft .NET Technologies. I have experience on databases, agile methodologies, collaboration software. Involved in unit test cases and regression testing.</p>
+									<p class="text-left">For more content focussed sites I have experience in Concrete5, Expression Engine, Magento Ecommerce and Wordpress. With experience in front-end (HTML5, CSS3, jQuery and AngularJS) to quickly and efficiently build a project from the beginning until deploying to life.</p>
+									<p class="text-left">I am a proactive person with a flair for adopting emerging trends and addressing industry requirements to achieve objectives. I am an effective team member with proven abilities to be a part of the team during the project phase. I can provide good skills, responsibilities, maturity, good teamwork and desires to face new challenges. I have always liked creating websites, I am passionate about programming, last technology and agile coding, and programming standards and I have a wide range of skills necessary to fit the description of a Full Stack Developer. </p>
+									<p class="text-left">You can view my full resume on <a href="https://uk.linkedin.com/in/elena-sánchez-5572a726" target="_blank">Linkedin</a>.</p>
+								</div>
+							</div>
+						</div>  
+					</div> 
 				</div>
-				<!-- about -->
+				<!-- About: Ends -->
 
-				<!-- projects -->
-				<div id="projects"  class="projects">
+				<!-- Portfolio: Starts -->
+				<div id="portfolio" class="projects">
 					<div class="row projects__main">
 
 						<div class="title">
-							<h2 class="text-center"><span class="glyphicon glyphicon-list-alt"></span> Projects</h2>
+							<h2 class="text-center"><span class="glyphicon glyphicon-list-alt"></span> Portfolio</h2>
 						</div>
 
 						<div class="spacer"> 
@@ -134,35 +131,84 @@
 						</div>
 					
 						<div class="container"> 
-
 							<div class="content">
 								<div class="col-sm-12">
-									<div class="project-description">
-										<h2><em>Sara y David</em></h2>
-										<h4>Concrete5 / Theme UI</h4>
-										<br><br>
+										<div class="portfolio-grid">
+										
+											<section class="thumbnail-grid flex">
+												
+												<a href="" id="projectNKC" class="flex-item js-flex-item">
+													<figure class="p3-figure">
+														<figcaption>
+															Nottingham Korfball Club<br>
+															Wordpress
+														</figcaption>
+													</figure>
+												</a>
 
-										<img src="assets/img/project-1.png" class="img-responsive">
+												<a href="" id="projectPortfolio" class="flex-item js-flex-item">
+													<figure class="p2-figure">
+														<figcaption>
+															Portfolio<br>
+															HTML/CSS - Jekyll
+														</figcaption>
+													</figure>
+												</a>
 
-										<br><br>
+												<a href="" id="projectWedding" class="flex-item js-flex-item">
+													<figure class="p1-figure">
+														<figcaption>
+																David & Sara<br>
+																Concrete5 / Theme UI
+														</figcaption>
+													</figure>
+												</a>												
+											</section>
+										</div>
 
-										<p class="text-left">A wedding website to do a perfect way to make sure that the guests of the wedding can easily find information about the event. In addition, the website includes a countdown to know how many days left to the event, an online RSVP feature to give the guests an easy way to confirm the assistence and a gallery with some pictures. </p>
+										<div id="projectNKC_container" style="display:none;">
+											<div class="project-description">
+												<h2><em>Nottingham Korfball Club</em></h2>
+												<h4>Wordpress</h4>
+											</div>
+										</div>
 
-										<p class="text-left">The design was build using Concrete5. The theme was built by myself and the design is responsive. </p>
+										<div id="projectPortfolio_container" style="display:none;">
+											<div class="project-description">
+												<h2><em>Portfolio</em></h2>
+												<h4>HTML/CSS - Jekyll</h4>
+											</div>
+										</div>
 
-										<p class="text-left">The theme and the colours match with the design of the wedding invitation. It is a very personal work and I really enjoyed building this website. </p>
-
-										<br><br>
-									</div>
+										<div id="projectWedding_container" style="display:none;">
+											<div class="project-description">
+												<h2><em>Sara y David</em></h2>
+												<h4>Concrete5 / Theme UI</h4>
+												<br><br>
+		
+												<img src="assets/img/project-1.png" class="img-responsive">
+		
+												<br><br>
+		
+												<p class="text-left">A wedding website to do a perfect way to make sure that the guests of the wedding can easily find information about the event. In addition, the website includes a countdown to know how many days left to the event, an online RSVP feature to give the guests an easy way to confirm the assistence and a gallery with some pictures. </p>
+		
+												<p class="text-left">The design was build using Concrete5. The theme was built by myself and the design is responsive. </p>
+		
+												<p class="text-left">The theme and the colours match with the design of the wedding invitation. It is a very personal work and I really enjoyed building this website. </p>
+		
+												<br><br>
+											</div>
+										</div>
 								</div>
 							</div>
 						</div>
+
 					</div>  
 				</div>
-				<!-- works -->				
+				<!-- Portfolio: Ends -->				
 
-				<!-- skills -->
-				<div id="skills"  class="skills">
+				<!-- Skills: Starts -->
+				<div id="skills" class="skills">
 					<div class="row skills__main">
 						 
 						<div class="title">
@@ -174,9 +220,8 @@
 						</div>
 					
 						<div class="container">  
-
 							<div ng-app="percentageApp" ng-controller="percentageController" >						
-  							
+								
 								<div class="col">
 									<skills-chart skill="css" value="40" text=".css{}"></skills-chart>
 								</div>
@@ -234,16 +279,17 @@
 		                        <span>TFS</span>
 		                        <span>Jira</span>	
 		                        <span>Confluence</span>
-		                </div>
-					</div>  
+		                	</div>
+						</div>  
+					</div>
 				</div>
-				<!-- skills -->
+				<!-- Skills: Ends -->
+
+				<!-- Contact: Starts -->
 				<div id="contact" class="contact">
-					<div class="row">
-		
+					<div class="row">		
 						<div class="title">
-							<h2 class="text-center"><i class="fa fa-envelope-open-o"></i>Contact</h2>
-							<h4>[get-in-touch]</h4>
+							<h2 class="text-center"><i class="fa fa-envelope-open-o"></i>Keep in touch</h2>
 						</div>
 						
 						<div class="spacer"> 
@@ -253,12 +299,16 @@
 						<div class="content">
 							<p>Are you interested in a collaboration, partnership or do you just want to come by and say hello?</p>
 
-							<a href="mailto:elena.sanchez.p@outlook.com" class="main-btn email-lnk">Contact <span class="glyphicon glyphicon-envelope"></span></a>
+							<p>
+								<span class="glyphicon glyphicon-envelope"></span>
+								<a href="mailto:elena.sanchez.p@outlook.com" class="main-btn email-lnk">Email</a>
+							</p>
 						</div> 
 					</div>  
 				</div>
+				<!-- Contact: Ends -->
 
-				<!-- Footer Starts -->
+				<!-- Footer: Starts -->
 				<div class="footer text-center">
 					<nav class="socialnav socialnav--footer">
 			            <ul>
@@ -275,26 +325,30 @@
 	        		</nav>
 
 					<hr>
+
 					<p>
 						Designed and coded with <span class="footer-heart glyphicon glyphicon-heart"></span> by myself
 					</p>
 				</div>
-				<!-- # Footer Ends -->
+				<!-- Footer: Ends -->
 			
+				<!-- Back to top: Starts -->
 				<a href="#home" class="backToTop">
 					<i class="fa fa-angle-up  fa-3x"></i>
 				</a>
+				<!-- Back to top: Ends -->
 			</div>
 		</div>
-		<!-- Header: End -->
+		<!-- Content: Ends -->
 
+		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/wow/wow.min.js"></script>
 		<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
 		<script src="assets/js/mobile/touchSwipe.min.js"></script>
+		<script src="https://unpkg.com/slick-carousel@1.7.1/slick/slick.js"></script>
 		<script src="assets/js/script.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 		<script src="assets/js/angular/app.js"></script>
-
 	</body>
 </html>
