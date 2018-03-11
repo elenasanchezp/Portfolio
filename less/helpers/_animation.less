@@ -1,0 +1,152 @@
+//==========================================================================
+//   ANIMATION
+//==========================================================================
+
+	.block--out {
+		visibility: hidden;
+	}
+
+	//======================================================================
+	//   Slide Up
+	//======================================================================
+
+		.fade--in {
+			animation-name: fade-in-up-lg;
+			animation-duration: 1s;
+			animation-fill-mode: both; 
+			visibility: visible !important;		
+		}
+
+		@keyframes fade-in-up-lg {
+			from {
+				opacity: 0;
+    			transform: translate3d(0, 75px, 0);
+		  	}
+		  	to {
+				opacity: 1;
+				transform: translate3d(0, 0, 0);
+		  	}
+		}
+
+    //======================================================================
+    //   Slide Down
+    //======================================================================
+
+		.fade--out {
+			animation-name: fade-out-down-lg;
+			animation-duration: .5s;
+			animation-fill-mode: both;
+			animation-delay: 600ms;
+			visibility: visible !important;
+		}
+
+		@keyframes fade-out-down-lg {
+			0% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+			100% {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+		}
+
+	//======================================================================
+	//   Slide In Left
+	//======================================================================
+		
+		.slide--left {
+		  	animation-name: slideInLeft;
+			animation-duration: 1s; 
+			animation-fill-mode: both; 
+			visibility: visible !important;			
+		}
+
+		@keyframes slideInLeft {
+		  	from {
+		    	transform: translate3d(-100%, 0, 0);
+		    	visibility: visible;
+		  	}
+
+		  	to {
+		    	transform: translate3d(0, 0, 0);
+		  	}
+		}
+
+	//======================================================================
+	//   Slide In Right
+	//======================================================================
+
+		.slide--right {
+		  	animation-name: slideInRight;
+			animation-duration: 1s; 
+			animation-fill-mode: both; 
+			visibility: visible !important;
+		}
+
+		@keyframes slideInRight {
+		  from {
+		    transform: translate3d(100%, 0, 0);
+		    visibility: visible;
+		  }
+
+		  to {
+		    transform: translate3d(0, 0, 0);
+		  }
+		}
+
+	//======================================================================
+	//   Slide In Up
+	//======================================================================
+		
+		.slide--in {
+		  	animation-name: slideInUp;
+			animation-duration: 1s; 
+			animation-fill-mode: both; 
+			visibility: visible !important;
+		}
+
+		@keyframes slideInUp {
+		  	from {
+		    	transform: translate3d(0, 100%, 0);
+		    	visibility: visible;
+		  	}
+
+		  	to {
+		    	transform: translate3d(0, 0, 0);
+		  	}
+		}
+
+
+	//======================================================================
+	//   Draw Left
+	//======================================================================
+
+		.draw--left {
+			animation-name: drawInLeft;
+			animation-duration: .5s;
+			animation-fill-mode: both;
+			animation-delay: 500ms;
+			visibility: visible !important;
+		}
+
+		@keyframes drawInLeft {
+			from {width: 0px;}
+			to {width: 40px;}
+		}
+
+	//======================================================================
+	//   Draw Right
+	//======================================================================
+
+		.draw--right {
+			animation-name: drawInRight;
+			animation-duration: .5s;
+			animation-fill-mode: both;
+			visibility: visible !important;
+		}
+
+		@keyframes drawInRight {
+			from {width: 40px;}
+			to {width: 0px;}
+		}

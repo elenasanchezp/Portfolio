@@ -6,10 +6,12 @@
         color: @link-color;
         text-decoration: underline;
     }
+    
     a:hover {
         color: @link-color;
         font-weight: bold; 
     }
+
     .btn,
     a,
     .btn:hover,
@@ -21,17 +23,27 @@
         transition: all 0.3s ease-in-out;
         outline: none !important;
     }
+
     .btn {
         border: none;
         border-radius: 0;
         padding: 12px 48px;
         text-transform: uppercase;
     }
+    
     .btn-danger {
         background: rgb(242, 24, 97) !important;
     }
+
     .btn:hover,
     .btn:active {
         color: @color-white;
         box-shadow: none;
+    }
+
+    .right_bt span {
+        width: 37px;
+        height: 25px;
+        display: block;
+        background: url(../img/menu.png) no-repeat 0px 0px;
     }
