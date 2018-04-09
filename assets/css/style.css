@@ -339,7 +339,7 @@ p {
   display: block;
 }
 .thumbnail-grid figure.p1-figure {
-  background: url('../img/portfolio/projectNKC.jpg') no-repeat center;
+  background: url('../img/portfolio/projectWedding.jpg') no-repeat center;
   background-size: cover;
 }
 .thumbnail-grid figure.p2-figure {
@@ -347,7 +347,7 @@ p {
   background-size: cover;
 }
 .thumbnail-grid figure.p3-figure {
-  background: url('../img/portfolio/projectWedding.jpg') no-repeat center;
+  background: url('../img/portfolio/projectNKC.jpg') no-repeat center;
   background-size: cover;
 }
 .flex {
