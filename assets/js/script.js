@@ -76,3 +76,14 @@
         }
     });
 
+    $(".flex-item").click(function(){
+        var itemID = $(this).prop('id');
+        $(".project_preview").hide();
+        $("#" + itemID + "_preview").toggle();
+    });
+
+    $(".close-preview").click(function(){
+        $(".project_preview").hide();
+    });
+
+    
